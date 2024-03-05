@@ -1,13 +1,15 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xC8D9F2AC109A65A1",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../mo7-embedded-wrapper.gen/sources_1/bd/design_1",
       "name": "design_1",
+      "pfm_name": "verdraaide_spoeltjes:pynq-z2:mo7-embedded-wrapper:1.0",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1"
+      "tool_version": "2023.1",
+      "validated": "true"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -15,15 +17,23 @@
       "leds_outputs": "",
       "ps7_0_axi_periph": {
         "xbar": "",
-        "s00_couplers": {},
+        "s00_couplers": {
+          "auto_pc": ""
+        },
         "m00_couplers": {},
         "m01_couplers": {},
         "m02_couplers": {},
-        "m03_couplers": {}
+        "m03_couplers": {},
+        "m04_couplers": {}
       },
       "btns_switches_inputs": "",
       "arduino_gpio": "",
-      "raspi_pmod_gpio": ""
+      "raspi_pmod_gpio": "",
+      "xlconcat_0": "",
+      "audio": {
+        "clk_wiz_0": "",
+        "audio_codec_ctrl_0": ""
+      }
     },
     "interface_ports": {
       "DDR": {
@@ -119,27 +129,39 @@
           },
           "BA": {
             "physical_name": "DDR_ba",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "2",
+            "right": "0"
           },
           "ADDR": {
             "physical_name": "DDR_addr",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "14",
+            "right": "0"
           },
           "DM": {
             "physical_name": "DDR_dm",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           },
           "DQ": {
             "physical_name": "DDR_dq",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "31",
+            "right": "0"
           },
           "DQS_N": {
             "physical_name": "DDR_dqs_n",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           },
           "DQS_P": {
             "physical_name": "DDR_dqs_p",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           }
         }
       },
@@ -156,7 +178,9 @@
         "port_maps": {
           "MIO": {
             "physical_name": "FIXED_IO_mio",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "53",
+            "right": "0"
           },
           "DDR_VRN": {
             "physical_name": "FIXED_IO_ddr_vrn",
@@ -187,15 +211,21 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "leds_4bits_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "3",
+            "right": "0"
           },
           "TRI_O": {
             "physical_name": "leds_4bits_tri_o",
-            "direction": "O"
+            "direction": "O",
+            "left": "3",
+            "right": "0"
           },
           "TRI_T": {
             "physical_name": "leds_4bits_tri_t",
-            "direction": "O"
+            "direction": "O",
+            "left": "3",
+            "right": "0"
           }
         }
       },
@@ -206,15 +236,21 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "rgb_led_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "5",
+            "right": "0"
           },
           "TRI_O": {
             "physical_name": "rgb_led_tri_o",
-            "direction": "O"
+            "direction": "O",
+            "left": "5",
+            "right": "0"
           },
           "TRI_T": {
             "physical_name": "rgb_led_tri_t",
-            "direction": "O"
+            "direction": "O",
+            "left": "5",
+            "right": "0"
           }
         }
       },
@@ -225,7 +261,9 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "btns_4bits_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "3",
+            "right": "0"
           }
         }
       },
@@ -236,7 +274,9 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "sws_2bits_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "1",
+            "right": "0"
           }
         }
       },
@@ -247,15 +287,21 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "arduino_a0_a5_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "5",
+            "right": "0"
           },
           "TRI_O": {
             "physical_name": "arduino_a0_a5_tri_o",
-            "direction": "O"
+            "direction": "O",
+            "left": "5",
+            "right": "0"
           },
           "TRI_T": {
             "physical_name": "arduino_a0_a5_tri_t",
-            "direction": "O"
+            "direction": "O",
+            "left": "5",
+            "right": "0"
           }
         }
       },
@@ -266,36 +312,180 @@
         "port_maps": {
           "TRI_I": {
             "physical_name": "raspberry_pi_tri_i",
-            "direction": "I"
+            "direction": "I",
+            "left": "26",
+            "right": "0"
           },
           "TRI_O": {
             "physical_name": "raspberry_pi_tri_o",
-            "direction": "O"
+            "direction": "O",
+            "left": "26",
+            "right": "0"
           },
           "TRI_T": {
             "physical_name": "raspberry_pi_tri_t",
+            "direction": "O",
+            "left": "26",
+            "right": "0"
+          }
+        }
+      },
+      "audio_iic": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
+        "port_maps": {
+          "SDA_I": {
+            "physical_name": "audio_iic_sda_i",
+            "direction": "I"
+          },
+          "SDA_O": {
+            "physical_name": "audio_iic_sda_o",
+            "direction": "O"
+          },
+          "SDA_T": {
+            "physical_name": "audio_iic_sda_t",
+            "direction": "O"
+          },
+          "SCL_I": {
+            "physical_name": "audio_iic_scl_i",
+            "direction": "I"
+          },
+          "SCL_O": {
+            "physical_name": "audio_iic_scl_o",
+            "direction": "O"
+          },
+          "SCL_T": {
+            "physical_name": "audio_iic_scl_t",
             "direction": "O"
           }
         }
       },
-      "arduino_a0_a5_0": {
+      "arduino_iic": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
+        "port_maps": {
+          "SDA_I": {
+            "physical_name": "arduino_iic_sda_i",
+            "direction": "I"
+          },
+          "SDA_O": {
+            "physical_name": "arduino_iic_sda_o",
+            "direction": "O"
+          },
+          "SDA_T": {
+            "physical_name": "arduino_iic_sda_t",
+            "direction": "O"
+          },
+          "SCL_I": {
+            "physical_name": "arduino_iic_scl_i",
+            "direction": "I"
+          },
+          "SCL_O": {
+            "physical_name": "arduino_iic_scl_o",
+            "direction": "O"
+          },
+          "SCL_T": {
+            "physical_name": "arduino_iic_scl_t",
+            "direction": "O"
+          }
+        }
+      },
+      "pmod_b": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
           "TRI_I": {
-            "physical_name": "arduino_a0_a5_0_tri_i",
-            "direction": "I"
+            "physical_name": "pmod_b_tri_i",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
           },
           "TRI_O": {
-            "physical_name": "arduino_a0_a5_0_tri_o",
-            "direction": "O"
+            "physical_name": "pmod_b_tri_o",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
           },
           "TRI_T": {
-            "physical_name": "arduino_a0_a5_0_tri_t",
-            "direction": "O"
+            "physical_name": "pmod_b_tri_t",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
           }
         }
+      },
+      "arduino_ar0_ar13": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_I": {
+            "physical_name": "arduino_ar0_ar13_tri_i",
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "TRI_O": {
+            "physical_name": "arduino_ar0_ar13_tri_o",
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "TRI_T": {
+            "physical_name": "arduino_ar0_ar13_tri_t",
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "audio_clk_10Mhz": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/audio/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "10000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "audio_bclk": {
+        "direction": "O"
+      },
+      "audio_lrclk": {
+        "direction": "O"
+      },
+      "audio_sdata_o": {
+        "direction": "O"
+      },
+      "audio_codec_address": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "audio_sdata_i": {
+        "direction": "I"
       }
     },
     "components": {
@@ -422,6 +612,18 @@
           "PCW_CLK3_FREQ": {
             "value": "10000000"
           },
+          "PCW_CORE0_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE0_IRQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_IRQ_INTR": {
+            "value": "0"
+          },
           "PCW_CPU_CPU_6X4X_MAX_RANGE": {
             "value": "667"
           },
@@ -461,20 +663,11 @@
           "PCW_ENET0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_ENET0_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_ENET0_RESET_IO": {
-            "value": "MIO 9"
-          },
           "PCW_ENET1_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
           "PCW_ENET1_PERIPHERAL_ENABLE": {
             "value": "0"
-          },
-          "PCW_ENET_RESET_ENABLE": {
-            "value": "1"
           },
           "PCW_ENET_RESET_POLARITY": {
             "value": "Active Low"
@@ -540,7 +733,7 @@
             "value": "1"
           },
           "PCW_EN_EMIO_I2C1": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_MODEM_UART0": {
             "value": "0"
@@ -603,7 +796,7 @@
             "value": "1"
           },
           "PCW_EN_I2C1": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_MODEM_UART0": {
             "value": "0"
@@ -737,8 +930,17 @@
           "PCW_I2C0_RESET_ENABLE": {
             "value": "0"
           },
+          "PCW_I2C1_BASEADDR": {
+            "value": "0xE0005000"
+          },
+          "PCW_I2C1_HIGHADDR": {
+            "value": "0xE0005FFF"
+          },
+          "PCW_I2C1_I2C1_IO": {
+            "value": "EMIO"
+          },
           "PCW_I2C1_PERIPHERAL_ENABLE": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_I2C_PERIPHERAL_FREQMHZ": {
             "value": "108.333336"
@@ -757,6 +959,12 @@
           },
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
+          },
+          "PCW_IRQ_F2P_MODE": {
+            "value": "DIRECT"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -1228,12 +1436,12 @@
           },
           "PCW_MIO_TREE_PERIPHERALS": {
             "value": [
-              "GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#GPIO#Quad SPI Flash#GPIO#GPIO#GPIO#GPIO#GPIO#UART 0#UART",
+              "GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#GPIO#Quad SPI Flash#GPIO#I2C 0#I2C 0#GPIO#GPIO#UART 0#UART",
               "0#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO"
             ]
           },
           "PCW_MIO_TREE_SIGNALS": {
-            "value": "gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#gpio[7]#qspi_fbclk#gpio[9]#gpio[10]#gpio[11]#gpio[12]#gpio[13]#rx#tx#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#gpio[48]#gpio[49]#gpio[50]#gpio[51]#gpio[52]#gpio[53]"
+            "value": "gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#gpio[7]#qspi_fbclk#gpio[9]#scl#sda#gpio[12]#gpio[13]#rx#tx#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#gpio[48]#gpio[49]#gpio[50]#gpio[51]#gpio[52]#gpio[53]"
           },
           "PCW_M_AXI_GP0_ENABLE_STATIC_REMAP": {
             "value": "0"
@@ -1358,6 +1566,21 @@
           "PCW_OVERRIDE_BASIC_CLOCK": {
             "value": "0"
           },
+          "PCW_P2F_GPIO_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_I2C0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_I2C1_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_QSPI_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_UART0_INTR": {
+            "value": "0"
+          },
           "PCW_PACKAGE_DDR_BOARD_DELAY0": {
             "value": "0.279"
           },
@@ -1392,7 +1615,7 @@
             "value": "200"
           },
           "PCW_PERIPHERAL_BOARD_PRESET": {
-            "value": "None"
+            "value": "part0"
           },
           "PCW_PLL_BYPASSMODE_ENABLE": {
             "value": "0"
@@ -1448,9 +1671,6 @@
           "PCW_SDIO_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
-          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
-            "value": "50"
-          },
           "PCW_SDIO_PERIPHERAL_VALID": {
             "value": "0"
           },
@@ -1495,6 +1715,18 @@
           },
           "PCW_SPI_PERIPHERAL_VALID": {
             "value": "0"
+          },
+          "PCW_S_AXI_HP0_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -1751,12 +1983,6 @@
           "PCW_USB0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_USB0_RESET_ENABLE": {
-            "value": "1"
-          },
-          "PCW_USB0_RESET_IO": {
-            "value": "MIO 46"
-          },
           "PCW_USB1_PERIPHERAL_ENABLE": {
             "value": "0"
           },
@@ -1803,7 +2029,7 @@
             "value": "0"
           },
           "PCW_USE_FABRIC_INTERRUPT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_USE_HIGH_OCM": {
             "value": "0"
@@ -1983,6 +2209,9 @@
               }
             }
           }
+        },
+        "pfm_attributes": {
+          "CLOCK": "FCLK_CLK0 {id \"0\" is_default \"true\" proc_sys_reset \"/proc_sys_reset_0\" status \"fixed\" freq_hz \"100000000\"}"
         }
       },
       "proc_sys_reset_0": {
@@ -2015,7 +2244,7 @@
         "xci_name": "design_1_ps7_0_axi_periph_0",
         "parameters": {
           "NUM_MI": {
-            "value": "4"
+            "value": "5"
           }
         },
         "interface_ports": {
@@ -2040,6 +2269,11 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "M03_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M04_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
@@ -2138,6 +2372,22 @@
           "M03_ARESETN": {
             "type": "rst",
             "direction": "I"
+          },
+          "M04_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M04_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M04_ARESETN"
+              }
+            }
+          },
+          "M04_ARESETN": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
@@ -2148,7 +2398,7 @@
             "inst_hier_path": "ps7_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
-                "value": "4"
+                "value": "5"
               },
               "NUM_SI": {
                 "value": "1"
@@ -2165,7 +2415,8 @@
                   "M00_AXI",
                   "M01_AXI",
                   "M02_AXI",
-                  "M03_AXI"
+                  "M03_AXI",
+                  "M04_AXI"
                 ]
               }
             }
@@ -2217,11 +2468,56 @@
                 "direction": "I"
               }
             },
+            "components": {
+              "auto_pc": {
+                "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+                "xci_name": "design_1_auto_pc_0",
+                "xci_path": "ip\\design_1_auto_pc_0\\design_1_auto_pc_0.xci",
+                "inst_hier_path": "ps7_0_axi_periph/s00_couplers/auto_pc",
+                "parameters": {
+                  "MI_PROTOCOL": {
+                    "value": "AXI4LITE"
+                  },
+                  "SI_PROTOCOL": {
+                    "value": "AXI3"
+                  }
+                },
+                "interface_ports": {
+                  "S_AXI": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "bridges": [
+                      "M_AXI"
+                    ]
+                  }
+                }
+              }
+            },
             "interface_nets": {
-              "s00_couplers_to_s00_couplers": {
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
-                  "M_AXI"
+                  "auto_pc/S_AXI"
+                ]
+              }
+            },
+            "nets": {
+              "S_ACLK_1": {
+                "ports": [
+                  "S_ACLK",
+                  "auto_pc/aclk"
+                ]
+              },
+              "S_ARESETN_1": {
+                "ports": [
+                  "S_ARESETN",
+                  "auto_pc/aresetn"
                 ]
               }
             }
@@ -2449,6 +2745,62 @@
                 ]
               }
             }
+          },
+          "m04_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "interface_nets": {
+              "m04_couplers_to_m04_couplers": {
+                "interface_ports": [
+                  "S_AXI",
+                  "M_AXI"
+                ]
+              }
+            }
           }
         },
         "interface_nets": {
@@ -2474,6 +2826,12 @@
             "interface_ports": [
               "m03_couplers/M_AXI",
               "M03_AXI"
+            ]
+          },
+          "m04_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "m04_couplers/M_AXI",
+              "M04_AXI"
             ]
           },
           "ps7_0_axi_periph_to_s00_couplers": {
@@ -2511,89 +2869,49 @@
               "xbar/M03_AXI",
               "m03_couplers/S_AXI"
             ]
+          },
+          "xbar_to_m04_couplers": {
+            "interface_ports": [
+              "xbar/M04_AXI",
+              "m04_couplers/S_AXI"
+            ]
           }
         },
         "nets": {
-          "M00_ACLK_1": {
-            "ports": [
-              "M00_ACLK",
-              "m00_couplers/M_ACLK"
-            ]
-          },
-          "M00_ARESETN_1": {
-            "ports": [
-              "M00_ARESETN",
-              "m00_couplers/M_ARESETN"
-            ]
-          },
-          "M01_ACLK_1": {
-            "ports": [
-              "M01_ACLK",
-              "m01_couplers/M_ACLK"
-            ]
-          },
-          "M01_ARESETN_1": {
-            "ports": [
-              "M01_ARESETN",
-              "m01_couplers/M_ARESETN"
-            ]
-          },
-          "M02_ACLK_1": {
-            "ports": [
-              "M02_ACLK",
-              "m02_couplers/M_ACLK"
-            ]
-          },
-          "M02_ARESETN_1": {
-            "ports": [
-              "M02_ARESETN",
-              "m02_couplers/M_ARESETN"
-            ]
-          },
-          "M03_ACLK_1": {
-            "ports": [
-              "M03_ACLK",
-              "m03_couplers/M_ACLK"
-            ]
-          },
-          "M03_ARESETN_1": {
-            "ports": [
-              "M03_ARESETN",
-              "m03_couplers/M_ARESETN"
-            ]
-          },
-          "S00_ACLK_1": {
-            "ports": [
-              "S00_ACLK",
-              "s00_couplers/S_ACLK"
-            ]
-          },
-          "S00_ARESETN_1": {
-            "ports": [
-              "S00_ARESETN",
-              "s00_couplers/S_ARESETN"
-            ]
-          },
           "ps7_0_axi_periph_ACLK_net": {
             "ports": [
               "ACLK",
               "xbar/aclk",
+              "s00_couplers/S_ACLK",
               "s00_couplers/M_ACLK",
+              "m00_couplers/M_ACLK",
+              "m01_couplers/M_ACLK",
+              "m02_couplers/M_ACLK",
+              "m03_couplers/M_ACLK",
+              "m04_couplers/M_ACLK",
               "m00_couplers/S_ACLK",
               "m01_couplers/S_ACLK",
               "m02_couplers/S_ACLK",
-              "m03_couplers/S_ACLK"
+              "m03_couplers/S_ACLK",
+              "m04_couplers/S_ACLK"
             ]
           },
           "ps7_0_axi_periph_ARESETN_net": {
             "ports": [
               "ARESETN",
               "xbar/aresetn",
+              "s00_couplers/S_ARESETN",
               "s00_couplers/M_ARESETN",
+              "m00_couplers/M_ARESETN",
+              "m01_couplers/M_ARESETN",
+              "m02_couplers/M_ARESETN",
+              "m03_couplers/M_ARESETN",
+              "m04_couplers/M_ARESETN",
               "m00_couplers/S_ARESETN",
               "m01_couplers/S_ARESETN",
               "m02_couplers/S_ARESETN",
-              "m03_couplers/S_ARESETN"
+              "m03_couplers/S_ARESETN",
+              "m04_couplers/S_ARESETN"
             ]
           }
         }
@@ -2627,11 +2945,8 @@
           "C_INTERRUPT_PRESENT": {
             "value": "1"
           },
-          "C_IS_DUAL": {
-            "value": "0"
-          },
           "GPIO2_BOARD_INTERFACE": {
-            "value": "Custom"
+            "value": "arduino_ar0_ar13"
           },
           "GPIO_BOARD_INTERFACE": {
             "value": "arduino_a0_a5"
@@ -2647,17 +2962,189 @@
         "xci_path": "ip\\design_1_axi_gpio_0_2\\design_1_axi_gpio_0_2.xci",
         "inst_hier_path": "raspi_pmod_gpio",
         "parameters": {
+          "C_GPIO2_WIDTH": {
+            "value": "8"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "27"
+          },
           "C_INTERRUPT_PRESENT": {
             "value": "1"
           },
+          "C_IS_DUAL": {
+            "value": "1"
+          },
           "GPIO2_BOARD_INTERFACE": {
-            "value": "arduino_a0_a5"
+            "value": "Custom"
           },
           "GPIO_BOARD_INTERFACE": {
-            "value": "raspberry_pi"
+            "value": "Custom"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "audio": {
+        "interface_ports": {
+          "S_AXI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        },
+        "ports": {
+          "S_AXI_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "S_AXI_ACLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "audio_clk_10Mhz": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "audio_bclk": {
+            "direction": "O"
+          },
+          "audio_lrclk": {
+            "direction": "O"
+          },
+          "audio_sdata_o": {
+            "direction": "O"
+          },
+          "tx_irq": {
+            "direction": "O"
+          },
+          "audio_codec_address": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "SDATA_I_0": {
+            "direction": "I"
+          }
+        },
+        "components": {
+          "clk_wiz_0": {
+            "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+            "xci_name": "design_1_clk_wiz_0_0",
+            "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+            "inst_hier_path": "audio/clk_wiz_0",
+            "parameters": {
+              "CLKOUT1_JITTER": {
+                "value": "290.478"
+              },
+              "CLKOUT1_PHASE_ERROR": {
+                "value": "133.882"
+              },
+              "CLKOUT1_REQUESTED_OUT_FREQ": {
+                "value": "10.000"
+              },
+              "MMCM_CLKFBOUT_MULT_F": {
+                "value": "15.625"
+              },
+              "MMCM_CLKOUT0_DIVIDE_F": {
+                "value": "78.125"
+              },
+              "MMCM_DIVCLK_DIVIDE": {
+                "value": "2"
+              },
+              "RESET_PORT": {
+                "value": "resetn"
+              },
+              "RESET_TYPE": {
+                "value": "ACTIVE_LOW"
+              },
+              "USE_LOCKED": {
+                "value": "false"
+              }
+            }
+          },
+          "audio_codec_ctrl_0": {
+            "vlnv": "xilinx.com:user:audio_codec_ctrl:1.0",
+            "xci_name": "design_1_audio_codec_ctrl_0_0",
+            "xci_path": "ip\\design_1_audio_codec_ctrl_0_0\\design_1_audio_codec_ctrl_0_0.xci",
+            "inst_hier_path": "audio/audio_codec_ctrl_0"
+          }
+        },
+        "interface_nets": {
+          "ps7_0_axi_periph_M04_AXI": {
+            "interface_ports": [
+              "S_AXI",
+              "audio_codec_ctrl_0/S_AXI"
+            ]
+          }
+        },
+        "nets": {
+          "SDATA_I_0_1": {
+            "ports": [
+              "SDATA_I_0",
+              "audio_codec_ctrl_0/SDATA_I"
+            ]
+          },
+          "audio_codec_ctrl_0_BCLK": {
+            "ports": [
+              "audio_codec_ctrl_0/BCLK",
+              "audio_bclk"
+            ]
+          },
+          "audio_codec_ctrl_0_LRCLK": {
+            "ports": [
+              "audio_codec_ctrl_0/LRCLK",
+              "audio_lrclk"
+            ]
+          },
+          "audio_codec_ctrl_0_SDATA_O": {
+            "ports": [
+              "audio_codec_ctrl_0/SDATA_O",
+              "audio_sdata_o"
+            ]
+          },
+          "audio_codec_ctrl_0_codec_address": {
+            "ports": [
+              "audio_codec_ctrl_0/codec_address",
+              "audio_codec_address"
+            ]
+          },
+          "audio_codec_ctrl_0_tx_irq": {
+            "ports": [
+              "audio_codec_ctrl_0/tx_irq",
+              "tx_irq"
+            ]
+          },
+          "clk_wiz_0_clk_out1": {
+            "ports": [
+              "clk_wiz_0/clk_out1",
+              "audio_clk_10Mhz"
+            ]
+          },
+          "proc_sys_reset_0_peripheral_aresetn": {
+            "ports": [
+              "S_AXI_ARESETN",
+              "audio_codec_ctrl_0/S_AXI_ARESETN",
+              "clk_wiz_0/resetn"
+            ]
+          },
+          "processing_system7_0_FCLK_CLK0": {
+            "ports": [
+              "S_AXI_ACLK",
+              "audio_codec_ctrl_0/S_AXI_ACLK",
+              "clk_wiz_0/clk_in1"
+            ]
           }
         }
       }
@@ -2669,16 +3156,16 @@
           "arduino_gpio/GPIO"
         ]
       },
+      "arduino_gpio_GPIO2": {
+        "interface_ports": [
+          "arduino_ar0_ar13",
+          "arduino_gpio/GPIO2"
+        ]
+      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "raspberry_pi",
           "raspi_pmod_gpio/GPIO"
-        ]
-      },
-      "axi_gpio_0_GPIO2": {
-        "interface_ports": [
-          "arduino_a0_a5_0",
-          "raspi_pmod_gpio/GPIO2"
         ]
       },
       "btns_switches_gpio_GPIO": {
@@ -2717,6 +3204,18 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
+      "processing_system7_0_IIC_0": {
+        "interface_ports": [
+          "audio_iic",
+          "processing_system7_0/IIC_0"
+        ]
+      },
+      "processing_system7_0_IIC_1": {
+        "interface_ports": [
+          "arduino_iic",
+          "processing_system7_0/IIC_1"
+        ]
+      },
       "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
           "processing_system7_0/M_AXI_GP0",
@@ -2746,9 +3245,75 @@
           "ps7_0_axi_periph/M03_AXI",
           "raspi_pmod_gpio/S_AXI"
         ]
+      },
+      "ps7_0_axi_periph_M04_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M04_AXI",
+          "audio/S_AXI"
+        ]
+      },
+      "raspi_pmod_gpio_GPIO2": {
+        "interface_ports": [
+          "pmod_b",
+          "raspi_pmod_gpio/GPIO2"
+        ]
       }
     },
     "nets": {
+      "SDATA_I_0_1": {
+        "ports": [
+          "audio_sdata_i",
+          "audio/SDATA_I_0"
+        ]
+      },
+      "arduino_gpio_ip2intc_irpt": {
+        "ports": [
+          "arduino_gpio/ip2intc_irpt",
+          "xlconcat_0/In2"
+        ]
+      },
+      "audio_codec_ctrl_0_BCLK": {
+        "ports": [
+          "audio/audio_bclk",
+          "audio_bclk"
+        ]
+      },
+      "audio_codec_ctrl_0_LRCLK": {
+        "ports": [
+          "audio/audio_lrclk",
+          "audio_lrclk"
+        ]
+      },
+      "audio_codec_ctrl_0_SDATA_O": {
+        "ports": [
+          "audio/audio_sdata_o",
+          "audio_sdata_o"
+        ]
+      },
+      "audio_codec_ctrl_0_codec_address": {
+        "ports": [
+          "audio/audio_codec_address",
+          "audio_codec_address"
+        ]
+      },
+      "audio_codec_ctrl_0_tx_irq": {
+        "ports": [
+          "audio/tx_irq",
+          "xlconcat_0/In0"
+        ]
+      },
+      "btns_switches_inputs_ip2intc_irpt": {
+        "ports": [
+          "btns_switches_inputs/ip2intc_irpt",
+          "xlconcat_0/In1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "audio/audio_clk_10Mhz",
+          "audio_clk_10Mhz"
+        ]
+      },
       "proc_sys_reset_0_peripheral_aresetn": {
         "ports": [
           "proc_sys_reset_0/peripheral_aresetn",
@@ -2761,7 +3326,9 @@
           "arduino_gpio/s_axi_aresetn",
           "ps7_0_axi_periph/M02_ARESETN",
           "raspi_pmod_gpio/s_axi_aresetn",
-          "ps7_0_axi_periph/M03_ARESETN"
+          "ps7_0_axi_periph/M03_ARESETN",
+          "ps7_0_axi_periph/M04_ARESETN",
+          "audio/S_AXI_ARESETN"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2778,13 +3345,27 @@
           "arduino_gpio/s_axi_aclk",
           "ps7_0_axi_periph/M02_ACLK",
           "raspi_pmod_gpio/s_axi_aclk",
-          "ps7_0_axi_periph/M03_ACLK"
+          "ps7_0_axi_periph/M03_ACLK",
+          "ps7_0_axi_periph/M04_ACLK",
+          "audio/S_AXI_ACLK"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "raspi_pmod_gpio_ip2intc_irpt": {
+        "ports": [
+          "raspi_pmod_gpio/ip2intc_irpt",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },
@@ -2796,6 +3377,11 @@
               "SEG_arduino_gpio_Reg": {
                 "address_block": "/arduino_gpio/S_AXI/Reg",
                 "offset": "0x41220000",
+                "range": "64K"
+              },
+              "SEG_audio_codec_ctrl_0_reg0": {
+                "address_block": "/audio/audio_codec_ctrl_0/S_AXI/reg0",
+                "offset": "0x43C00000",
                 "range": "64K"
               },
               "SEG_axi_gpio_0_Reg": {

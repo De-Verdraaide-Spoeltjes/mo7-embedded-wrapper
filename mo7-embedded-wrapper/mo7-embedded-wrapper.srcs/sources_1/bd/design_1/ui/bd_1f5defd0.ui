@@ -1,49 +1,89 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.661238",
-   "Default View_TopLeft":"-222,3",
+   "Default View_ScaleFactor":"0.791786",
+   "Default View_TopLeft":"338,0",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1000 -y 430 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1000 -y 460 -defaultsOSRD
-preplace port leds_4bits -pg 1 -lvl 4 -x 1000 -y 350 -defaultsOSRD
-preplace port rgb_led -pg 1 -lvl 4 -x 1000 -y 380 -defaultsOSRD
-preplace port btns_4bits -pg 1 -lvl 4 -x 1000 -y 60 -defaultsOSRD
-preplace port sws_2bits -pg 1 -lvl 4 -x 1000 -y 90 -defaultsOSRD
-preplace port arduino_a0_a5 -pg 1 -lvl 4 -x 1000 -y 210 -defaultsOSRD
-preplace port raspberry_pi -pg 1 -lvl 4 -x 1000 -y 510 -defaultsOSRD
-preplace port arduino_a0_a5_0 -pg 1 -lvl 4 -x 1000 -y 540 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 490 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y 300 -defaultsOSRD
-preplace inst leds_outputs -pg 1 -lvl 3 -x 870 -y 360 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 580 -y 250 -defaultsOSRD
-preplace inst btns_switches_inputs -pg 1 -lvl 3 -x 870 -y 80 -defaultsOSRD
-preplace inst arduino_gpio -pg 1 -lvl 3 -x 870 -y 220 -defaultsOSRD
-preplace inst raspi_pmod_gpio -pg 1 -lvl 3 -x 870 -y 540 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 200 410
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 190 420 70 740
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 440 430 750
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 440 NJ 440 980J
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 460 NJ 460 NJ
-preplace netloc leds_gpio_GPIO 1 3 1 NJ 350
-preplace netloc leds_gpio_GPIO2 1 3 1 980J 370n
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 130n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 730 220n
-preplace netloc btns_switches_gpio_GPIO 1 3 1 NJ 60
-preplace netloc btns_switches_gpio_GPIO2 1 3 1 980J 80n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 720 60n
-preplace netloc arduino_gpio_GPIO 1 3 1 NJ 210
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 760 200n
-preplace netloc axi_gpio_0_GPIO 1 3 1 980J 510n
-preplace netloc axi_gpio_0_GPIO2 1 3 1 NJ 540
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 720 280n
-levelinfo -pg 1 0 220 580 870 1000
-pagesize -pg 1 -db -bbox -sgen 0 0 1160 620
+preplace port DDR -pg 1 -lvl 4 -x 1450 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1450 -y 90 -defaultsOSRD
+preplace port leds_4bits -pg 1 -lvl 4 -x 1450 -y 790 -defaultsOSRD
+preplace port rgb_led -pg 1 -lvl 4 -x 1450 -y 820 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 4 -x 1450 -y 640 -defaultsOSRD
+preplace port sws_2bits -pg 1 -lvl 4 -x 1450 -y 670 -defaultsOSRD
+preplace port arduino_a0_a5 -pg 1 -lvl 4 -x 1450 -y 310 -defaultsOSRD
+preplace port raspberry_pi -pg 1 -lvl 4 -x 1450 -y 480 -defaultsOSRD
+preplace port audio_iic -pg 1 -lvl 4 -x 1450 -y 120 -defaultsOSRD
+preplace port arduino_iic -pg 1 -lvl 4 -x 1450 -y 150 -defaultsOSRD
+preplace port pmod_b -pg 1 -lvl 4 -x 1450 -y 510 -defaultsOSRD
+preplace port arduino_ar0_ar13 -pg 1 -lvl 4 -x 1450 -y 340 -defaultsOSRD
+preplace port port-id_audio_clk_10Mhz -pg 1 -lvl 4 -x 1450 -y 1000 -defaultsOSRD
+preplace port port-id_audio_bclk -pg 1 -lvl 4 -x 1450 -y 1100 -defaultsOSRD
+preplace port port-id_audio_lrclk -pg 1 -lvl 4 -x 1450 -y 1130 -defaultsOSRD
+preplace port port-id_audio_sdata_o -pg 1 -lvl 4 -x 1450 -y 1160 -defaultsOSRD
+preplace port port-id_audio_sdata_i -pg 1 -lvl 0 -x 0 -y 1180 -defaultsOSRD
+preplace portBus audio_codec_address -pg 1 -lvl 4 -x 1450 -y 1190 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1030 -y 140 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 780 -defaultsOSRD
+preplace inst leds_outputs -pg 1 -lvl 3 -x 1030 -y 810 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 560 -y 470 -defaultsOSRD
+preplace inst btns_switches_inputs -pg 1 -lvl 3 -x 1030 -y 670 -defaultsOSRD
+preplace inst arduino_gpio -pg 1 -lvl 3 -x 1030 -y 340 -defaultsOSRD
+preplace inst raspi_pmod_gpio -pg 1 -lvl 3 -x 1030 -y 510 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 560 -y 790 -defaultsOSRD
+preplace inst audio -pg 1 -lvl 3 -x 1030 -y 1010 -defaultsOSRD
+preplace inst audio|clk_wiz_0 -pg 1 -lvl 1 -x 1090 -y 1000 -defaultsOSRD
+preplace inst audio|audio_codec_ctrl_0 -pg 1 -lvl 1 -x 1090 -y 1150 -defaultsOSRD
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 380 250 750
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 30 590 370 240 760 420 1400
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 20 NJ 20 NJ 20 1410
+preplace netloc clk_wiz_0_clk_out1 1 3 1 NJ 1000
+preplace netloc audio_codec_ctrl_0_BCLK 1 3 1 1430J 1100n
+preplace netloc audio_codec_ctrl_0_LRCLK 1 3 1 NJ 1130
+preplace netloc audio_codec_ctrl_0_SDATA_O 1 3 1 1430J 1150n
+preplace netloc audio_codec_ctrl_0_codec_address 1 3 1 NJ 1190
+preplace netloc audio_codec_ctrl_0_tx_irq 1 1 3 420 890 NJ 890 1410
+preplace netloc btns_switches_inputs_ip2intc_irpt 1 1 3 400 900 NJ 900 1390
+preplace netloc arduino_gpio_ip2intc_irpt 1 1 3 390 10 NJ 10 1420
+preplace netloc raspi_pmod_gpio_ip2intc_irpt 1 1 3 410 270 780J 430 1390
+preplace netloc xlconcat_0_dout 1 2 1 710 150n
+preplace netloc SDATA_I_0_1 1 0 3 NJ 1180 NJ 1180 NJ
+preplace netloc arduino_gpio_GPIO 1 3 1 1430J 310n
+preplace netloc axi_gpio_0_GPIO 1 3 1 1430J 480n
+preplace netloc btns_switches_gpio_GPIO 1 3 1 1410J 640n
+preplace netloc btns_switches_gpio_GPIO2 1 3 1 NJ 670
+preplace netloc leds_gpio_GPIO 1 3 1 1430J 790n
+preplace netloc leds_gpio_GPIO2 1 3 1 NJ 820
+preplace netloc processing_system7_0_DDR 1 3 1 1430J 60n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 1430J 90n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 400 260 NJ 260 1390
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 730 430n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 720 450n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 770 320n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 N 490
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 700 510n
+preplace netloc processing_system7_0_IIC_0 1 3 1 NJ 120
+preplace netloc processing_system7_0_IIC_1 1 3 1 1430J 140n
+preplace netloc raspi_pmod_gpio_GPIO2 1 3 1 N 510
+preplace netloc arduino_gpio_GPIO2 1 3 1 N 340
+preplace netloc audio|proc_sys_reset_0_peripheral_aresetn 1 0 1 930 990n
+preplace netloc audio|processing_system7_0_FCLK_CLK0 1 0 1 940 1010n
+preplace netloc audio|clk_wiz_0_clk_out1 1 1 1 N 1000
+preplace netloc audio|audio_codec_ctrl_0_BCLK 1 1 1 N 1110
+preplace netloc audio|audio_codec_ctrl_0_LRCLK 1 1 1 N 1130
+preplace netloc audio|audio_codec_ctrl_0_SDATA_O 1 1 1 N 1150
+preplace netloc audio|audio_codec_ctrl_0_tx_irq 1 1 1 N 1170
+preplace netloc audio|audio_codec_ctrl_0_codec_address 1 1 1 N 1190
+preplace netloc audio|SDATA_I_0_1 1 0 1 950 1140n
+preplace netloc audio|ps7_0_axi_periph_M04_AXI 1 0 1 N 1120
+levelinfo -pg 1 0 200 560 1030 1450
+levelinfo -hier audio * 1090 *
+pagesize -pg 1 -db -bbox -sgen -140 0 1660 1270
+pagesize -hier audio -db -bbox -sgen 900 930 1260 1250
 "
 }
 {
-   "da_axi4_cnt":"4",
+   "da_axi4_cnt":"5",
    "da_board_cnt":"8",
    "da_clkrst_cnt":"1",
    "da_ps7_cnt":"1"

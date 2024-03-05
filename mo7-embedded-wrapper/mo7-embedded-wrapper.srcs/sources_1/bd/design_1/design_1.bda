@@ -259,6 +259,24 @@
                 "SV": "xilinx.com:ip:axi_gpio:2.0",
                 "TM": "both",
                 "TU": "register"
+            },
+            "V7": {
+                "VT": "AC",
+                "BA": "0x43C00000",
+                "HA": "0x43C0FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_audio_codec_ctrl_0_reg0",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/audio/audio_codec_ctrl_0",
+                "SI": "S_AXI",
+                "SS": "reg0",
+                "SV": "xilinx.com:user:audio_codec_ctrl:1.0",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -287,6 +305,11 @@
             },
             {
                 "src": "V6",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V7",
                 "trg": "V2",
                 "EH": "2"
             }

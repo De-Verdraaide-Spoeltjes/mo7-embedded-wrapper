@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_leds_gpio_0/sim/design_1_leds_gpio_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_2/sim/design_1_axi_gpio_0_2.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/family_support.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/common_types.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/pselect_f.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/address_decoder.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/slave_attachment.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/axi_lite_ipif.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/user_logic.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/iis_deser.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/iis_ser.vhd" \
+"../../../bd/design_1/ipshared/06b8/src/i2s_ctrl.vhd" \
+"../../../bd/design_1/ip/design_1_audio_codec_ctrl_0_0/sim/design_1_audio_codec_ctrl_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort
